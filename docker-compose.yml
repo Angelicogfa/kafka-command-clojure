@@ -27,3 +27,18 @@ services:
   #     TOPIC_KAFKA: topic-sample
   #   links: 
   #     - kafka
+
+  # sender:
+  #   container_name: sender
+  #   build: ./consumer
+  #   depends_on: 
+  #     - zookeeper
+  #     - kafka
+  #   environment: 
+  #     KAFKA_BROKEN: kafka:9092
+  #     TOPIC_KAFKA: topic-sample
+  #     GROUP_ID: sales-context
+  #   links:
+  #     - kafka
+
+      
